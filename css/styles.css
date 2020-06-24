@@ -202,11 +202,11 @@ img {
   margin-left: auto;
 }
 
-.adress-item {
+.adress-list {
   margin-right: 30px;
 }
 
-.adress-item:last-child {
+.adress-list:last-child {
   margin-right: 0;
 }
 
@@ -219,7 +219,7 @@ img {
   padding-bottom: 32px;
 }
 
-.adress-header::before {
+/* .adress-header::before {
   width: 20px;
   height: 20px;
   content: "";
@@ -227,20 +227,69 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 10px;
-}
+} */
 
 .adress-header:hover,
 .adress-header:focus {
   color: var(--accent-color);
+  --color3: var(--accent-color);
+  --color4: var(--accent-color);
 }
 
-.icon-letter::before {
+/* .icon-letter::before {
   background-image: url(../images/envelope.svg);
 }
 
 .icon-smartphone::before {
   background-image: url(../images/smartphone.svg);
+} */
+
+/* Оформление иконок Studio */
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
 }
+
+.icon-header {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.icon-header.second {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: var(--accent-color);
+}
+
+.twitter:hover,
+.twitter:focus {
+  --color2: #ffffff;
+}
+
+.facebook:hover,
+.facebook:focus {
+  --color2: #ffffff;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  --color2: #ffffff;
+}
+
+.instagram:hover,
+.instagram:focus {
+  --color1: #ffffff;
+}
+
 .adress-footer {
   color: var(--primary-white-color);
   padding-bottom: 9px;
@@ -509,8 +558,17 @@ img {
 .list-workers {
   list-style: none;
   display: flex;
+  justify-content: center;
 
   padding-bottom: 24px;
+}
+
+.list-workers > li {
+  margin-right: 10px;
+}
+
+.list-workers > li:last-child {
+  margin-right: 0;
 }
 
 .advantage-words {
@@ -535,14 +593,14 @@ img {
 }
 
 .social-links {
-  color: var(--title-text-color-secondary);
+  display: block;
 }
 
-.social-links:hover,
+/* .social-links:hover,
 .social-links:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-}
+} */
 
 /* Клиенты INDEX */
 
