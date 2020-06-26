@@ -219,75 +219,40 @@ img {
   padding-bottom: 32px;
 }
 
-/* .adress-header::before {
-  width: 20px;
-  height: 20px;
-  content: "";
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-} */
-
 .adress-header:hover,
 .adress-header:focus {
   color: var(--accent-color);
-  --color3: var(--accent-color);
   --color4: var(--accent-color);
 }
 
-/* .icon-letter::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-smartphone::before {
-  background-image: url(../images/smartphone.svg);
-} */
-
 /* Оформление иконок Studio */
 
-.icon {
-  width: 44px;
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
-  border: none;
+  width: 44px;
+
   border-radius: 50%;
+
+  padding: 0;
+  border: none;
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent-color);
+  --color3: var(--primary-white-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 .icon-header {
-  width: 15px;
-  height: 15px;
   margin-right: 10px;
-}
-
-.icon-header.second {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
-
-.icon:hover,
-.icon:focus {
-  background-color: var(--accent-color);
-}
-
-.twitter:hover,
-.twitter:focus {
-  --color2: #ffffff;
-}
-
-.facebook:hover,
-.facebook:focus {
-  --color2: #ffffff;
-}
-
-.linkedin:hover,
-.linkedin:focus {
-  --color2: #ffffff;
-}
-
-.instagram:hover,
-.instagram:focus {
-  --color1: #ffffff;
 }
 
 .adress-footer {
@@ -494,7 +459,17 @@ img {
   display: flex;
 }
 
+.clients-list-item {
+  display: block;
+  margin-right: 30px;
+  background-color: #ffffff;
+}
+
+.yaco {
+}
+
 .list-item {
+  display: block;
   margin-right: 30px;
   background-color: #ffffff;
 }
@@ -509,32 +484,20 @@ img {
 
 /* Оформление иконок */
 
-.list-advantage::before {
-  display: block;
-  content: "";
+.list-advantage div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  background-size: contain;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-gray-color);
   border-radius: 4px;
+
+  margin-bottom: 30px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.icon-advantage {
+  width: 70px;
+  height: 70px;
 }
 
 .list-team > .list-item {
@@ -592,27 +555,26 @@ img {
   padding-bottom: 16px;
 }
 
-.social-links {
-  display: block;
-}
-
-/* .social-links:hover,
-.social-links:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-} */
-
 /* Клиенты INDEX */
 
 .customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
   color: var(--title-text-color-secondary);
-  text-decoration: none;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .customers:hover,
 .customers:focus {
-  background-color: var(--primary-white-color);
-  color: var(--accent-color);
+  border-color: var(--accent-color);
+  --color2: var(--accent-color);
+  --color3: var(--accent-color);
 }
 
 /* Футер INDEX и PORTFOLIO */
@@ -651,21 +613,31 @@ footer > .container {
 }
 
 .social-links-footer {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 44px;
+
   background-color: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   color: var(--primary-white-color);
+
+  padding: 0;
+  border: none;
 }
 
 .social-links-footer:hover,
 .socila-links-footer:focus {
   background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  --color3: var(--primary-white-color);
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  --color3: #ffffff;
 }
 
 .social-list {
@@ -675,21 +647,7 @@ footer > .container {
 .social-list:last-child {
   margin-right: 0;
 }
-.icon-instagram {
-  background-image: url(../images/instagramfooter.svg);
-}
 
-.icon-facebook {
-  background-image: url(../images/facebookfooter.svg);
-}
-
-.icon-twitter {
-  background-image: url(../images/twitterfooter.svg);
-}
-
-.icon-linkedin {
-  background-image: url(../images/linkedinfooter.svg);
-}
 .copyright {
   color: rgba(255, 255, 255, 0.4);
 
